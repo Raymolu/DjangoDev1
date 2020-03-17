@@ -1,0 +1,27 @@
+{
+    "python.autoComplete.addBrackets": true,
+    "python.jediEnabled": false,
+    "python.linting.pylintEnabled": true,
+    "python.linting.pycodestyleEnabled": true,
+    "python.linting.flake8Enabled": true,
+    "terminal.integrated.shell.windows": "C:\\Windows\\System32\\cmd.exe",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "workbench.iconTheme": "vscode-icons",
+    "python.linting.prospectorEnabled": true,
+    "python.linting.pydocstyleEnabled": true,
+    "python.linting.pylamaEnabled": true,
+    "python.pythonPath": "C:\\ProgramData\\Anaconda3\\envs\\Nordic-Conception\\python.exe",
+    "editor.rulers": [
+        79
+    ],
+    "window.zoomLevel": 0,
+
+    "code-runner.executorMap": {
+
+    },
+    "code-runner.runInTerminal": true,
+    "code-runner.respectShebang": false,
+    "files.autoSave": "onFocusChange",
+    "python.linting.enabled": false
+}

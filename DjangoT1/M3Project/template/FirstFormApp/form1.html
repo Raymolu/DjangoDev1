@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+
+{% extends 'FirstFormApp/base.html' %}
+{% block body_block %}
+
+<body>
+    <h1>Fill this out please! :D</h1>
+    <div class="container">
+        <form method="post">
+            {{form.as_p}}
+            {% csrf_token %}
+            <input type="submit" class="btn btn-primary" value="Submit">
+        </form>
+    </div>
+
+</body>
+
+{% endblock %}

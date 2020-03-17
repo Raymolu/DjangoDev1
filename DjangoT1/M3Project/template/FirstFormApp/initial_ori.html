@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is the initial page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron"
+            {{InsertPoint_1}} <p></p>   {{InsertPoint_2}}
+            <h1>Go to form page</h1>
+            <p></p>
+            <ul>
+            <li><a href="/form1/"> classical link to Form 1 Page</a></li>
+            <li><a href=" {% url 'FirstFormApp:form1' %} "> relative referencing to Form 1 Page</a></li>
+            <li><a href=" {% url 'admin:index' %} "> relative referencing to admin index page</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

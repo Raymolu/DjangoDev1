@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+{% extends "TicketManager/base.html" %}
+
+{% block body_block %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ticket List</title>
+</head>
+<body>
+<h1>This is the first template</h1>
+<ul>
+{% for ticket in ticket_list %}
+    <li>Ticket:  {{ ticket.tracking_id }}</li>
+    <li>Company: {{ ticket.company }}</li>
+    <li>Contact: {{ ticket.contact }}</li>
+    <li>Agent:   {{ ticket.agent }}</li>
+    <li>Issue:   {{ ticket.text }}</li>
+    <li>Status:  {{ ticket.status }}</li>
+    <li>Creation Date: {{ ticket.start_date|date }}</li>
+    <li>Close Date: {{ ticket.end_date|date }}</li>
+    <li>---------------------------------</li>
+
+{% empty %}
+    <li>No articles yet.</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
+{% endblock %}

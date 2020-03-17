@@ -1,0 +1,23 @@
+ <!DOCTYPE html>
+{% extends "basic_app/base.html" %}
+    {% block body_block%}
+
+    <h1>Hello and welcome to the site!</h1>
+    <h1>This is the index.html page</h1>
+
+    {{ text|title }}
+ <P></P>
+
+    {{ number|floatformat:3}}
+<P></P>
+    {{ number|add:'17'|floatformat:3}}
+ <P></P>
+
+    {{ number|floatformat:2|add:'217'}}
+<P></P>
+    {% load extratags %}
+     {{ text|cutit:'is'}}
+<P></P>
+
+
+    {% endblock %}

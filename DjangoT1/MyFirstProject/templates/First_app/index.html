@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load staticfiles%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is the First App</title>
+    <link rel="stylesheet" href="{% static 'css/MyStyle1.css' %}"/>
+</head>
+<body>
+    <h1>Here is your information:</h1>
+   <p></p>
+    <a href="First_app/help/"> Help Page</a>
+    <p></p>
+    <div class="FirstItem">
+        {% if Users %}
+        <table>
+            <thead>
+            <th>First Name</th>
+            <th>Second Name</th>
+            <th>Email</th>
+            </thead>
+        <ol>
+        {% for acc in Users %}
+            <li>User Info
+            <ul>
+                <li>{{ acc.First_name }}</li>
+                <li>{{ acc.Last_name }}</li>
+                <li>{{ acc.Email }}</li>
+            </ul>
+            </li>
+        {% endfor %}
+        </ol>
+
+        </table>
+        {% else %}
+
+        <p>NO ACCESS RECORD FOUND</p>
+        {% endif %}
+
+    </div>
+
+    <div class="SecondItem">
+        {% if access_records %}
+        <table>
+            <thead>
+            <th>Site Name</th>
+            <th>Date Accessed</th>
+            </thead>
+
+        {% for acc in access_records %}
+        <tr>
+            <td id="name">{{ acc.name }}</td>
+            <td>{{ acc.date }}</td>
+
+        </tr>
+        {% endfor %}
+
+        </table>
+        {% else %}
+
+        <p>NO ACCESS RECORD FOUND</p>
+        {% endif %}
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>base</title>
+</head>
+<body>
+  <nav>
+    <div>
+      <ul>
+        <li><a href="{% url 'TicketManager_URL:ticket_list'%}">Tickets</a></li>
+        <li><a href="{% url 'TicketManager_URL:ticket_detail' pk=1 %}">First ticket</a></li>
+
+        <li><a href="{% url 'admin:index' %}">Admin</a></li>
+
+      </ul>
+    </div>
+  </nav>
+{% block body_block %}
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load staticfiles%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>This is the First App</title>
+    <link rel="stylesheet" href="{% static 'css/MyStyle1.css' %}"/>
+</head>
+<body>
+    <h1>This is a logo:</h1>
+    {{insert_me}}
+    <p></p>
+    {{insert_me2}}
+    <p></p>
+    <a href="First_app/help/"> Help Page</a>
+    <p></p>
+    <img src='{% static "images/django.png" %}' alt="Oh no!!! what the ....!">
+</body>
+</html>
